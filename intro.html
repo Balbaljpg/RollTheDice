@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4715a24189.js" crossorigin="anonymous"></script>
+</head>
+<body id='body'>
+    <h1>ROLL THE DICE!</h1>
+    
+    <h5></h5>
+
+    <h6> Settings <br> 
+    <button onclick="playAudio()" style= 'width: 20px' ><i class="fas fa-play"></i></button>
+    <button onclick="pauseAudio()" style='width: 20px' ><i class="fas fa-pause"></i></button>
+    <br> <button onclick="changeColor()" style= 'width: 20px'><i class="fas fa-image"></i></button>
+    </h6>
+    
+    <audio id="myAudio">
+        <source src="firstmusic.mp3" type="audio/mpeg">
+    </audio>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>Play with your friends.<br>
+        Decide who goes first. Whoever has the highest number WINS!
+    </h2>
+    <div class="container1">
+        <div class="dice-wrapper">
+            <h3>Player 1</h3>
+            <img  id="die-1">
+            <img  id="die-2">
+            <h4>Player 2</h4>
+        </div>
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <button onclick="roll() ; rolleddice.play()">ROLL</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
